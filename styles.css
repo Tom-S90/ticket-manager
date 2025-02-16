@@ -1,14 +1,14 @@
 h1{
   font-family: VT323, monospace;
   color: green;
-  background_color: black;
+  background-color: black;
 }
 p{
   color: white;
-  background_color: black;
+  background-color: black;
 }
 
 button-nav{
   color: green;
-  background_color: black;
+  background-color: black;
 }
