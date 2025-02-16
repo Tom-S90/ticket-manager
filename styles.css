@@ -1,14 +1,29 @@
+body {
+  font-family: VT323, monospace;
+  background-color: #000000;
+  color: #00ff00;
+  text-align: center;
+  padding: 30px;
+}
 h1{
   font-family: VT323, monospace;
-  color: green;
-  background-color: black;
+  font-size: 30px;
+  background-color: #000000;
+  color: #00ff00;
 }
 p{
-  color: white;
-  background-color: black;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 button-nav{
-  color: green;
-  background-color: black;
+  color: #00ff00;
+  background-color: #000000;
+}
+
+.navigation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
 }
