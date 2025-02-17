@@ -179,12 +179,20 @@ main {
   box-shadow: none;
 }
 
-/*Mobile CSS Media Queries*/
 /* Mobile Styles (Screen width less than 768px) */
 @media (max-width: 768px) {
-  /* Hide the sidebar on mobile */
+  /* Hide the sidebar on mobile by default */
   aside {
     display: none;
+  }
+
+  /* Show the sidebar when the mobile menu is toggled */
+  #mobile-menu-toggle:checked ~ aside {
+    display: block;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+    position: fixed; /* Overlay */
+    z-index: 1; /* Above other content */
   }
 
   /* Center the main content */
@@ -209,32 +217,13 @@ main {
     margin: 10px auto; /* Center buttons and reduce margin */
   }
 
-  /* Add a mobile menu button */
+  /* Show the mobile menu button only on mobile */
   .mobile-menu-btn {
-    display: block; /* Show the mobile menu button */
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: #00ff00;
-    color: black;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 2; /* Ensure it's above other content */
+    display: block; /* Show on mobile */
   }
 
-  /* Show the sidebar when the mobile menu button is clicked */
-  #mobile-menu-toggle:checked ~ aside {
-    display: block; /* Show the sidebar */
-    width: 100%; /* Take full width */
-    height: 100vh; /* Take full height */
-    position: fixed; /* Overlay the content */
-    z-index: 1; /* Ensure it's above the main content */
-  }
-
-  /* Adjust the menu button for mobile */
+  /* Hide the desktop menu button on mobile */
   .menu-btn {
-    display: none; /* Hide the desktop menu button */
+    display: none;
   }
 }
