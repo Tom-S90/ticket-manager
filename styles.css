@@ -130,7 +130,7 @@ aside {
 /* Main Content Styles */
 main {
   position: relative;
-  left: calc(var(--menu-width) + 20px);
+  left: calc(var(--menu-width));
   width: calc(100% - (var(--menu-width) + 20px));
   transition: .3s;
   padding: 10px;
