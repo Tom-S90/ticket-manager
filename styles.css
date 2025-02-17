@@ -34,7 +34,7 @@ a:hover {
   --menu-width: 250px;
   --collapsed-width: 40px;
 }
-
+/*Sidebar Styles*/
 aside {
   padding: 10px;
   position: fixed;
@@ -177,4 +177,64 @@ main {
 .nav-button:active {
   transform: translateY(0) scale(1);
   box-shadow: none;
+}
+
+/*Mobile CSS Media Queries*/
+/* Mobile Styles (Screen width less than 768px) */
+@media (max-width: 768px) {
+  /* Hide the sidebar on mobile */
+  aside {
+    display: none;
+  }
+
+  /* Center the main content */
+  main {
+    left: 0 !important; /* Override any sidebar-related shifts */
+    width: 100% !important; /* Take full width */
+    padding: 20px; /* Add more padding for better spacing */
+  }
+
+  /* Adjust header and text for mobile */
+  h1 {
+    font-size: 24px; /* Smaller font size for mobile */
+  }
+
+  p {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+
+  /* Stack navigation buttons vertically */
+  .nav-button {
+    width: 80%; /* Wider buttons for easier tapping */
+    margin: 10px auto; /* Center buttons and reduce margin */
+  }
+
+  /* Add a mobile menu button */
+  .mobile-menu-btn {
+    display: block; /* Show the mobile menu button */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #00ff00;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2; /* Ensure it's above other content */
+  }
+
+  /* Show the sidebar when the mobile menu button is clicked */
+  #mobile-menu-toggle:checked ~ aside {
+    display: block; /* Show the sidebar */
+    width: 100%; /* Take full width */
+    height: 100vh; /* Take full height */
+    position: fixed; /* Overlay the content */
+    z-index: 1; /* Ensure it's above the main content */
+  }
+
+  /* Adjust the menu button for mobile */
+  .menu-btn {
+    display: none; /* Hide the desktop menu button */
+  }
 }
