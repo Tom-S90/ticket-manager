@@ -34,7 +34,8 @@ a:hover {
   --menu-width: 250px;
   --collapsed-width: 40px;
 }
-/*Sidebar Styles*/
+
+/* Sidebar Styles */
 aside {
   padding: 10px;
   position: fixed;
@@ -144,6 +145,7 @@ main {
   justify-content: center; /* Center content vertically */
   text-align: center;
 }
+
 #menu-toggle:checked ~ main {
   left: var(--menu-width); /* Shift content when sidebar expands */
   width: calc(100% - var(--menu-width)); /* Adjust width */
@@ -220,10 +222,25 @@ main {
   /* Show the mobile menu button only on mobile */
   .mobile-menu-btn {
     display: block; /* Show on mobile */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #00ff00;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2; /* Ensure it's above other content */
   }
 
   /* Hide the desktop menu button on mobile */
   .menu-btn {
     display: none;
   }
+}
+
+/* Hide the mobile menu button by default */
+.mobile-menu-btn {
+  display: none; /* Hidden by default */
 }
