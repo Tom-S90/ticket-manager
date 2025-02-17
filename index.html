@@ -1,18 +1,28 @@
-<link rel="stylesheet" href="styles.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<header>
-  <h1> Welcome to the Ticket Manager </h1>
-</header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Manager</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
 <body>
-  <a href="" class="nav-button"> Create Ticket </a>
-  <a href="" class="nav-button"> Resolve Ticket </a>
-  
-  <p> I'd like to use this as a show of my abilities in web design, so please make use of this page as necessary, thanks! </p>
+  <input type="checkbox" id="menu-toggle" hidden>
+  <aside>
+    <label for="menu-toggle" class="menu-btn fa fa-chevron-left"></label>
+    <div class="menu">
+      <ul class="menu-content">
+        <li><a href="https://tom-s90.github.io/index.html" class="menu-item"><span class="icon fa fa-home"></span><span class="item-name">Home</span></a><span class="tooltip">Home</span></li>
+      </ul>
+    </div>
+  </aside>
+  <main>
+    <header>
+      <h1>Welcome to the Ticket Manager</h1>
+    </header>
+    <a href="#" class="nav-button">Resolve Ticket</a>
+    <a href="#" class="nav-button">Create Ticket</a>
+    <p>I'd like to use this as a show of my abilities in web design, so please make use of this page as necessary, thanks!</p>
+  </main>
 </body>
-<aside>
-  <div class = menu>
-    <ul class = "menu-content">
-      <li> <a href="https://tom-s90.github.io/index.html" class="nav-button"><span class = "material = symbol = outlined"> Home</span> <span>Home</span> </a> </li>
-    </ul>
-  </div>
-</aside>
+</html>
