@@ -70,7 +70,7 @@ aside {
 }
 
 #menu-toggle:checked ~ aside .menu-btn::before {
-  content: "\f054"; /* Font Awesome chevron-right icon */
+  content: "\f053"; /* Font Awesome chevron-right icon */
 }
 
 .menu-content {
@@ -243,4 +243,10 @@ main {
 /* Hide the mobile menu button by default */
 .mobile-menu-btn {
   display: none; /* Hidden by default */
+}
+
+@media (min-width: 769px) {
+  .mobile-menu-btn {
+    display: none !important;
+  }
 }
