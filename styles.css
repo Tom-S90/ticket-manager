@@ -39,7 +39,7 @@ a:hover {
 aside {
   padding: 10px;
   position: fixed;
-  min-height: 100vh;
+  min-height: 85vh;
   background: linear-gradient(0deg, black, #0f0f0f);
   width: var(--collapsed-width);
   color: white;
